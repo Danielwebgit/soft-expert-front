@@ -24,8 +24,8 @@ export const addItemCart = (productItem: any) => {
 
 export const addPurchaseOrder = (dataForm: any) => {
   return (dispatch: any) => {
-    const v = {"name": "nameded"}
-    apiService.post(`/products/store`, {"name": "Daniel"}).then((response) => {
+   
+    apiService.post(`/products/store`, dataForm).then((response) => {
       console.log(response)
     }).catch((err) => {
       console.log(err)
